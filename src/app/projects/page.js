@@ -68,6 +68,31 @@ const Projects = () => {
           </div>
           <Image src={images.mchPro} alt="project" />
         </div>
+
+        <div className="item">
+          <div className="box">
+            <p>
+              User can manage their wedding through this site and can get benefitted exploring other related services
+            </p>
+            <Link href="https://wedding-e627c.web.app/">
+              Live Link
+            </Link>
+          </div>
+          <Image src={images.wedding} alt="project" />
+        </div>
+
+        <div className="item">
+          <div className="box">
+            <p>
+              It is platform to buy and sell home, property and others with a real state company.
+            </p>
+            <Link href="https://real-state-nextjs.netlify.app/">Live Link</Link>
+            <Link href="https://github.com/hasan13222/real-state">
+              Code Link
+            </Link>
+          </div>
+          <Image src={images.realEstatePro} alt="project" />
+        </div>
       </div>
     </div>
   );

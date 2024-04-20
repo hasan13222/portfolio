@@ -10,6 +10,7 @@ import portfolioPro from '../../public/images/portfolio.png';
 import fairmarriage from '../../public/images/fairmarriage.png';
 import electrons from '../../public/images/electrons.png';
 import feedthehunger from '../../public/images/feedthehunger.png';
+import wedding from '../../public/images/wedding.png';
 
 export const images = {
     profilePic,
@@ -23,5 +24,6 @@ export const images = {
     portfolioPro,
     fairmarriage,
     electrons,
-    feedthehunger
+    feedthehunger,
+    wedding
 }
