@@ -16,13 +16,18 @@ const programmingSkills = [
     },
     {
         id: 4,
-        title: 'Javascript',
+        title: 'Javascript & Typescript',
         description: 'As programming language or scripting language I have very good command over JavaScript. Beside logic building, I can manipulate dom with JavaScript quite easily',
     },
     {
         id: 5,
-        title: 'React & Next',
+        title: 'React & Next.Js',
         description: "As I know javascript very well React and Next are my favorites for the development of front end applications. I am developing front end apps with React and Next following the library's best practices",
+    },
+    {
+        id: 5,
+        title: 'MongoDB & PostgreSQL',
+        description: "I have experience working on both nosql database like MongoDB and sql database like PostgreSQL.",
     },
 ];
 

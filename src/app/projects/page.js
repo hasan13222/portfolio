@@ -13,6 +13,47 @@ const Projects = () => {
         <div className="item">
           <div className="box">
             <p>
+              The Application provides seamless user experience with
+              authentication, bike management, booking management, and coupon
+              management, payment integration.
+            </p>
+            <Link href="https://bike-rental-frontend-eight.vercel.app/">Live Link</Link>
+            <Link href="https://github.com/hasan13222/bike-rental-frontend">
+              Code Link
+            </Link>
+          </div>
+          <Image src={images.bikeRental} alt="project" />
+        </div>
+        <div className="item">
+          <div className="box">
+            <p>
+            It is an ecommerce app focused on sports instruments and gears. Through the application user can manage
+            cart, place order by providing address.
+            </p>
+            <Link href="https://sports-shop-frontend.vercel.app/">Live Link</Link>
+            <Link href="https://github.com/hasan13222/sports-shop-frontend">
+              Code Link
+            </Link>
+          </div>
+          <Image src={images.sportShop} alt="project" />
+        </div>
+        <div className="item">
+          <div className="box">
+            <p>
+            It is social media app where user can share tips and story of their favorite pets and can
+            enjoy others post.
+            </p>
+            <Link href="https://pet-care-frontend-brown.vercel.app/">Live Link</Link>
+            <Link href="https://github.com/hasan13222/pet-care-frontend">
+              Code Link
+            </Link>
+          </div>
+          <Image src={images.petCare} alt="project" />
+        </div>
+
+        <div className="item">
+          <div className="box">
+            <p>
               Fairmarriage is a matrimonial site front end where user can get
               their desired bride/groom and get married.
             </p>
@@ -49,49 +90,6 @@ const Projects = () => {
             </Link>
           </div>
           <Image src={images.electrons} alt="project" />
-        </div>
-
-        <div className="item">
-          <div className="box">
-            <p>
-              MCH School is a school management site where student can admit and see his/her profile. Online courses are available to cart with filter option.
-            </p>
-            <Link href="https://illustrious-sherbet-92583d.netlify.app">
-              Live Link
-            </Link>
-            <Link href="https://github.com/hasan13222/school-manage">
-              Code Link
-            </Link>
-            <Link href="https://docs.google.com/document/d/1EvRvYrRqPMRxJiF_D0yISKiRWbcutUbtZUgfrZS74Uo/edit?usp=sharing">
-              Details
-            </Link>
-          </div>
-          <Image src={images.mchPro} alt="project" />
-        </div>
-
-        <div className="item">
-          <div className="box">
-            <p>
-              User can manage their wedding through this site and can get benefitted exploring other related services
-            </p>
-            <Link href="https://wedding-e627c.web.app/">
-              Live Link
-            </Link>
-          </div>
-          <Image src={images.wedding} alt="project" />
-        </div>
-
-        <div className="item">
-          <div className="box">
-            <p>
-              It is platform to buy and sell home, property and others with a real state company.
-            </p>
-            <Link href="https://real-state-nextjs.netlify.app/">Live Link</Link>
-            <Link href="https://github.com/hasan13222/real-state">
-              Code Link
-            </Link>
-          </div>
-          <Image src={images.realEstatePro} alt="project" />
         </div>
       </div>
     </div>

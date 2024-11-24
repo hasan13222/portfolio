@@ -27,10 +27,10 @@ export default function Home() {
         </div>
         <div className="texts">
           <h2>Jamil Hasan</h2>
-          <h4>React Developer</h4>
+          <h4>Full Stack Developer</h4>
           <p>
             Passionate Web Developer and logical thinker who is happy to
-            introduce himself as a front end developer.
+            introduce himself as a full stack developer.
           </p>
           <div className="icons">
             <a

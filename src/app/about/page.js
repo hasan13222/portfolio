@@ -14,7 +14,7 @@ const About = () => {
       </div>
       <div className="head">
         <h3>Jamil Hasan</h3>
-        <h4>React Developer</h4>
+        <h4>Full Stack Developer</h4>
       </div>
       <div className="body">
         <p className="para">
@@ -23,13 +23,13 @@ const About = () => {
           application. I always love to take new challenges and solve new
           problem on my own.
         </p>
-        <p className="para">
+        {/* <p className="para">
         I am a front end developer who can develop site
           with React, Next or HTML, CSS and JS.
           I can build interactive front end site from your any kind of
           inspiration such as Figma File, PSD file, PDF file or other
           references. So Feel free to contact with me.
-        </p>
+        </p> */}
       </div>
       <div className="personal_info">
         <div className="left">
@@ -78,7 +78,7 @@ const About = () => {
         </div>
       </div>
       <div className="cv_section">
-        <a href="./jamil_hasan_resume.pdf" download>
+        <a href="./cv.pdf" download>
           Download CV
         </a>
       </div>
@@ -120,11 +120,20 @@ const About = () => {
           <div className="items">
             <div className="item">
               <div className="timeline">
-                <span>May, 2023 - Oct, 2023</span>
+                <span>May, 2024 - Now</span>
               </div>
               <div className="school">
-                <h4>Ambition Technologies Ltd.</h4>
-                <p>Sr. Front End Developer</p>
+                <h4>FreelanceHub (BD) Ltd.</h4>
+                <p>Software Developer</p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="timeline">
+                <span>Dec, 2023 - Apr, 2024</span>
+              </div>
+              <div className="school">
+                <h4>Business Partner Group</h4>
+                <p>Front End Developer</p>
               </div>
             </div>
             <div className="item">
@@ -136,15 +145,7 @@ const About = () => {
                 <p>Front End Developer</p>
               </div>
             </div>
-            <div className="item">
-              <div className="timeline">
-                <span>Jun, 2020 - Aug, 2020</span>
-              </div>
-              <div className="school">
-                <h4>Working For Local Buyer</h4>
-                <p>Front End Developer</p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

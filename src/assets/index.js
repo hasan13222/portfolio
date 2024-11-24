@@ -11,6 +11,9 @@ import fairmarriage from '../../public/images/fairmarriage.png';
 import electrons from '../../public/images/electrons.png';
 import feedthehunger from '../../public/images/feedthehunger.png';
 import wedding from '../../public/images/wedding.png';
+import bikeRental from '../../public/images/bike-rental.png';
+import sportShop from '../../public/images/sports-shop.png';
+import petCare from '../../public/images/pet-care.png';
 
 export const images = {
     profilePic,
@@ -25,5 +28,8 @@ export const images = {
     fairmarriage,
     electrons,
     feedthehunger,
-    wedding
+    wedding,
+    bikeRental,
+    sportShop,
+    petCare
 }
