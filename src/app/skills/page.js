@@ -4,33 +4,43 @@ import "./page.css";
 import { languageSkills, programmingSkills } from "@/constants/skill";
 import Skill from "@/components/Skill";
 
-const Skills = () => {
+const Skills = async() => {
+  const skillsRes = await fetch('https://portfolio-project-server.vercel.app/api/skills', {next: {revalidate: 3600*24}});
+  const skills = await skillsRes.json();
   return (
     <div className="skills about">
       <span className="page_title">Skills</span>
       <h2>Programming Skills</h2>
 
       <div className="programming__skills">
-        {programmingSkills.map(item => (
-          <Skill
-          key={item.id}
-          desc={item.description}
-          skillOrder={item.id}
-          title={item.title}
-          />
-        ))}
+        {skills?.data?.map((item,i) => {
+          if (item.type === 'programming') {
+            return (
+              <Skill
+              key={item._id}
+              desc={item.description}
+              skillOrder={i+1}
+              title={item.title}
+              />
+            )
+          }
+        })}
       </div>
 
       <h2 className="lang_skill_title">Language Skills</h2>
       <div className="language__skills programming__skills">
-        {languageSkills.map(item => (
-          <Skill
-          key={item.id}
-          skillOrder={item.id}
-          title={item.title}
-          desc={item.description}
-          />
-        ))}
+        {skills?.data?.map((item, i) => {
+          if (item.type === 'language') {
+            return (
+              <Skill
+              key={item._id}
+              desc={item.description}
+              skillOrder={i+1}
+              title={item.title}
+              />
+            )
+          }
+        })}
       </div>
     </div>
   );

@@ -11,9 +11,15 @@ const DynamicParticleBackground = dynamic(() => import('../components/ParticleBg
 });
 
 export default function Home() {
+  const [summary, setSummary] = useState({});
   const [shouldRenderParticles, setShouldRenderParticles] = useState(false);
 
 
+  useEffect(() => {
+    fetch('https://portfolio-project-server.vercel.app/api/dashboard/summary')
+    .then(res => res.json())
+    .then((data) => setSummary(data))
+  }, [])
   useEffect(() => {
     if (typeof window !== 'undefined') {
         setShouldRenderParticles(true);
@@ -23,14 +29,13 @@ export default function Home() {
     <>
       <div className="home">
         <div className="image">
-          <Image src={images.profilePic} alt="profile picture" />
+          <Image width={300} height={300} src={summary?.data?.picture} alt="profile picture" />
         </div>
         <div className="texts">
-          <h2>Jamil Hasan</h2>
-          <h4>Full Stack Developer</h4>
+          <h2>{summary?.data?.title}</h2>
+          <h4>{summary?.data?.subtitle}</h4>
           <p>
-            Passionate Web Developer and logical thinker who is happy to
-            introduce himself as a full stack developer.
+            {summary?.data?.description}
           </p>
           <div className="icons">
             <a

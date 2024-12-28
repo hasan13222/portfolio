@@ -16,7 +16,7 @@ const Header = ({showMenu}) => {
                     </li>
                     <li><Link href="/about"><FaUser /> <span>About</span></Link></li>
                     <li><Link href="/skills"><FaPencilRuler /> <span>Skills</span></Link></li>
-                    <li><Link href="/services"><BsFillGearFill /> <span>Services</span></Link></li>
+                    {/* <li><Link href="/services"><BsFillGearFill /> <span>Services</span></Link></li> */}
                     <li><Link href="/projects"><BsBagDashFill /> <span>Projects</span></Link></li>
                     <li><Link href="/contact"><BsFillEnvelopeOpenFill /> <span>Contact</span></Link></li>
                 </ul>
