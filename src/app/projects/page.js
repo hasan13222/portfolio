@@ -5,7 +5,7 @@ import "./projects.css";
 import { images } from "@/assets";
 
 const Projects = async() => {
-  const projectsRes = await fetch('https://portfolio-project-server.vercel.app/api/projects', {next: {revalidate: 3600*24}});
+  const projectsRes = await fetch('https://portfolio-project-server.vercel.app/api/projects', {next: {revalidate: 60*10}});
   const projects = await projectsRes.json();
   return (
     <div className="about projects">
