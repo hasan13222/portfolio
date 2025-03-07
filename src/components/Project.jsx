@@ -16,7 +16,7 @@ const Project = ({ item }) => {
         <p>{item?.description}</p>
         <button onClick={onOpenModal}>See More</button>
         <Modal center={true} open={open} onClose={onCloseModal}>
-          <h2>{item?.name}</h2>
+          <h2 style={{fontSize: '18px'}}>{item?.name}</h2>
           <p style={{ fontSize: "14px", marginTop: "10px" }}>
             {item?.description}
           </p>
