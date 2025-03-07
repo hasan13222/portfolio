@@ -10,7 +10,7 @@ const Skills = async() => {
   return (
     <div className="skills about">
       <span className="page_title">Skills</span>
-      <h2>Programming Skills</h2>
+      <h2>Technologies</h2>
 
       <div className="programming__skills">
         {skills?.data?.map((item,i) => {
@@ -27,21 +27,6 @@ const Skills = async() => {
         })}
       </div>
 
-      <h2 className="lang_skill_title">Language Skills</h2>
-      <div className="language__skills programming__skills">
-        {skills?.data?.map((item, i) => {
-          if (item.type === 'language') {
-            return (
-              <Skill
-              key={item._id}
-              desc={item.description}
-              skillOrder={i+1}
-              title={item.title}
-              />
-            )
-          }
-        })}
-      </div>
     </div>
   );
 };

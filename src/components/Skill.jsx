@@ -1,14 +1,12 @@
+import Image from "next/image";
 import React from "react";
 
-const Skill = ({skillOrder, title, desc}) => {
+const Skill = ({ title, desc }) => {
   return (
     <>
       <div className="skill">
-        <span>{skillOrder}</span>
+        <Image src="/techs/html.png" width={50} height={50} alt="skill" />
         <h3>{title}</h3>
-        <p>
-          {desc}
-        </p>
         <div className="empty"></div>
       </div>
     </>

@@ -1,8 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
 import "../about/page.css";
 import "./projects.css";
-import { images } from "@/assets";
+import Project from "@/components/Project";
 
 const Projects = async() => {
   const projectsRes = await fetch('https://portfolio-project-server.vercel.app/api/projects', {next: {revalidate: 60*10}});
@@ -14,17 +12,8 @@ const Projects = async() => {
       <div className="project__items">
         {projects?.data?.map(item => (
           <div key={item._id} className="item">
-          <div className="box">
-            <p>
-              {item?.description}
-            </p>
-            <Link href={item?.live_link}>Live Link</Link>
-            <Link href={item?.code_link}>
-              Code Link
-            </Link>
+            <Project item={item} />
           </div>
-          <Image width={400} height={400} src={item?.picture} alt="project" />
-        </div>
         ))}
         
       </div>

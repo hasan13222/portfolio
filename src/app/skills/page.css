@@ -5,10 +5,11 @@
 }
 
 .programming__skills .skill {
-    width: 28.5rem;
+    width: 18.5rem;
     padding: 3rem;
     background-color: #464646;
     border-radius: 1px;
+    text-align: center;
 }
 
 .programming__skills .skill span {
@@ -25,9 +26,9 @@
 }
 
 .programming__skills .skill h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .programming__skills .skill p {
@@ -40,7 +41,7 @@
     width: 2.3rem;
     height: 1px;
     background-color: white;
-    margin-top: 2rem;
+    margin: 0 auto;
 }
 
 .programming__skills .skill:hover span {

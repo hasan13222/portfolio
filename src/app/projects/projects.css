@@ -1,48 +1,66 @@
 .project__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
 }
 
 .project__items .item {
-    width: 30rem;
-    height: 25rem;
-    border: 1px solid #969696;
-    border-radius: 1px;
-    position: relative;
+  width: 28rem;
+  height: 22rem;
+  border: 1px solid #969696;
+  border-radius: 1px;
+  position: relative;
 }
 
 .project__items .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project__items .item .box {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(12 12 12 / 89%);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
-    font-size: 12px;
-    transition: 0.3s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(12 12 12 / 89%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  font-size: 12px;
+  transition: 0.3s ease;
 }
-
-.project__items .item .box a {
-    display: block;
-    width: 100%;
-    padding: 0.8rem;
-    background-color: #FFF;
-    color: #000;
-    border-radius: 2px;
+.project__items .item .box button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .project__items .item:hover .box {
-    display: flex;
+  display: flex;
+}
+
+@media only screen and (max-width: 1201px) {
+  .project__items .item {
+    width: 20rem;
+    height: 18rem;
+  }
+  .project__items {
+    gap: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .project__items .item {
+    width: 18rem;
+    height: 15rem;
+  }
+  
 }

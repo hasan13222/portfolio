@@ -77,8 +77,8 @@ const About = async() => {
         </div>
       </div>
       <div className="cv_section">
-        <a href="./cv.pdf" download>
-          Download CV
+        <a href="./jamil_full_stack_dev.pdf" download>
+          Download Resume
         </a>
       </div>
       <div className="education_experience">

@@ -18,9 +18,9 @@
 }
 
 .about h2 {
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
     font-size: 2.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .about .img_wrapper img {
@@ -162,6 +162,7 @@
     font-weight: 600;
     margin-bottom: 5rem;
 }
+
 
 
 @media only screen and (max-width: 1199px) {
