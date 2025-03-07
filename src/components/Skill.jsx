@@ -5,7 +5,7 @@ const Skill = ({ title, desc }) => {
   return (
     <>
       <div className="skill">
-        <Image src="/techs/html.png" width={50} height={50} alt="skill" />
+        <Image src={`/techs/${title.toLowerCase()}.png`} width={50} height={50} alt="skill" />
         <h3>{title}</h3>
         <div className="empty"></div>
       </div>
